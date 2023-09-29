@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*
+font-family: 'Merriweather',
+serif;
+font-family: 'Playfair Display',
+serif;
+*/
+
+@font-face {
+  font-family: biotif;
+  src: url(./fonts/biotif/Biotif-Medium.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: cera;
+  src: url(./fonts/cera-pro/Cera\ Pro\ Regular.otf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: circular;
+  src: url(./fonts/Circular/CircularStd-Medium.otf);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: silka;
+  src: url(./fonts/silka-font-demo/Silka-Regular-&-Italic/Silka_Regular_&_Italic_Desktop/Silka-Regular.otf);
+}
+
+
+body{
+  background: #8D9295;
+}
+
+.body{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.oldOverlay{
+  opacity: 0.07;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-size: 700px;
+  background-repeat: repeat;
+  background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWg4bXE1dWltcTRuY3U4cDltZnVwYjR2NGlramY5bzA3ZnZvNjBqayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TfStC9tJdqDdu/giphy.gif");
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 6;
 }
